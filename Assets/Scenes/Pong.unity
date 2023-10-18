@@ -278,7 +278,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -336,6 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683764615}
   - component: {fileID: 683764614}
+  - component: {fileID: 683764616}
   m_Layer: 0
   m_Name: Top Wall
   m_TagString: Untagged
@@ -384,6 +385,18 @@ Transform:
   m_Father: {fileID: 355890593}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &683764616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683764613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddecd54aeac01af4cad31101a7610dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1022305964
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +410,7 @@ GameObject:
   - component: {fileID: 1022305966}
   - component: {fileID: 1022305965}
   - component: {fileID: 1022305969}
+  - component: {fileID: 1022305970}
   m_Layer: 0
   m_Name: Computer Paddle
   m_TagString: Untagged
@@ -531,6 +545,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 400
+  ballRb: {fileID: 2076868595}
+--- !u!114 &1022305970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022305964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddecd54aeac01af4cad31101a7610dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1391298177
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +629,7 @@ GameObject:
   - component: {fileID: 1422462739}
   - component: {fileID: 1422462738}
   - component: {fileID: 1422462742}
+  - component: {fileID: 1422462743}
   m_Layer: 0
   m_Name: Player Paddle
   m_TagString: Untagged
@@ -736,6 +764,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 400
+--- !u!114 &1422462743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422462737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddecd54aeac01af4cad31101a7610dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1658433199
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +786,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1658433201}
   - component: {fileID: 1658433200}
+  - component: {fileID: 1658433202}
   m_Layer: 0
   m_Name: Bottom Wall
   m_TagString: Untagged
@@ -794,6 +835,18 @@ Transform:
   m_Father: {fileID: 355890593}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1658433202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658433199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddecd54aeac01af4cad31101a7610dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1719788760
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,6 +917,7 @@ GameObject:
   - component: {fileID: 2076868596}
   - component: {fileID: 2076868595}
   - component: {fileID: 2076868594}
+  - component: {fileID: 2076868598}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -909,11 +963,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.5
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3a0718bd911b33647a4942b6a4d9499b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -985,3 +1039,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2076868598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076868593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de6b709d3ff1c58469d956637b9bdd87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15000
