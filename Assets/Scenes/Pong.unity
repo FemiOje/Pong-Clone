@@ -241,8 +241,8 @@ MonoBehaviour:
   computerScore: 0
   playerScoreText: {fileID: 1073566303}
   computerScoreText: {fileID: 1321921841}
-  playerPaddle: {fileID: 1422462737}
-  computerPaddle: {fileID: 1022305964}
+  playerPaddle: {fileID: 1422462742}
+  computerPaddle: {fileID: 1022305969}
 --- !u!4 &183685517
 Transform:
   m_ObjectHideFlags: 0
